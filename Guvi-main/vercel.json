@@ -7,9 +7,11 @@
     { "src": "api/*.php", "use": "@vercel/php" }
   ],
   "routes": [
+    { "src": "/", "dest": "/index.html" },
     { "src": "/register", "dest": "/register.html" },
     { "src": "/login", "dest": "/login.html" },
     { "src": "/profile", "dest": "/profile.html" }
   ]
 }
+
 
