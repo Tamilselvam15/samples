@@ -1,1 +1,15 @@
+{
+  "builds": [
+    { "src": "index.html", "use": "@vercel/static" },
+    { "src": "login.html", "use": "@vercel/static" },
+    { "src": "register.html", "use": "@vercel/static" },
+    { "src": "profile.html", "use": "@vercel/static" },
+    { "src": "api/*.php", "use": "@vercel/php" }
+  ],
+  "routes": [
+    { "src": "/register", "dest": "/register.html" },
+    { "src": "/login", "dest": "/login.html" },
+    { "src": "/profile", "dest": "/profile.html" }
+  ]
+}
 
